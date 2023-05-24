@@ -48,3 +48,26 @@ echo 'Skaičiai: a: '.$a.', b: '.$b.', c: '.$c."\n\n";
 echo $rezultatas2 = 'vidurinis skaičius = '.($a+$b+$c - min($a, $b, $c)-max($a, $b, $c));
 
 echo '</pre>';
+
+//Ketvira užduotis
+
+echo '<h3>4. Įvedami skaičiai -a, b, c –kraštinių ilgiai, trys kintamieji (naudokite ​rand()​ <br> funkcija nuo 1 iki 10). Parašykite PHP programą, kuri nustatytų, ar galima sudaryti trikampį ir <br> atsakymą atspausdintų. </h3>';
+
+$aa = rand(1,10);
+echo 'ab = '.rand(1,10);
+echo '<br>';
+$bb = rand(1,10);
+echo 'bc = '.rand(1,10);
+echo '<br>';
+$cc = rand(1,10);
+echo 'ca = '.rand(1,10);
+echo '<br>';
+
+echo '<br>';echo '<br>';
+
+
+if ($aa+$bb > $cc && $bb+$cc > $aa && $cc+$aa > $bb) {
+    echo 'Iš duotų krašnių galima sudaryti trikampį';
+} else {
+    echo 'Iš duotų krašnių negalima sudaryti trikampio';
+};
